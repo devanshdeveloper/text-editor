@@ -1,0 +1,89 @@
+*,
+*::before,
+*::after {
+  transition: 0.5s;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+body {
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+}
+
+header {
+  background-color: #202020;
+  width: 100%;
+ min-height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+textarea {
+  transition: 0.1s;
+}
+
+input,
+textarea,
+button,
+header span {
+  border-radius: 8px;
+  background-color: #101010;
+  padding: 8px;
+  margin: 8px;
+  border: 0;
+  font-size: 1.5rem;
+  color: white;
+}
+
+button:hover,
+input[type="submit"]:hover {
+  background-color: #151515;
+}
+
+.sidenav {
+  height: 100%;
+  width: 100vw;
+  position: fixed;
+  z-index: 1;
+  top: -100vh;
+  right: 0;
+  background-color: #202020;
+  overflow-x: hidden;
+}
+
+.textBoxes {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+.textDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 8px;
+  padding: 4px;
+  margin: 10px;
+  background-color: #101010;
+}
+.textDiv span {
+  font-size: 1.3rem;
+  color: white;
+  margin: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.textDiv button {
+  font-size: 1.1rem;
+  margin: 4px;
+  background-color: #202020;
+}
+
+.fa{
+  color: white;
+}
