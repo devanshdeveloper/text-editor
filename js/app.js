@@ -40,6 +40,7 @@ addEventListener("load", () => {
     document.body.requestFullscreen()
   );
   textInput.addEventListener("dblclick", () => textInput.requestFullscreen());
+  fileNameInput.addEventListener("focus", () => (fileNameInput.value = ""));
   setText(JSON.parse(localStorage.getItem("text")) ?? emptyText);
   paintFiles();
   textInput.addEventListener("input", updateTextInfo);
@@ -72,7 +73,7 @@ addEventListener("load", () => {
     openSidebar(false);
   });
   speakBtn.addEventListener("click", () => {
-    recognition.start()
+    recognition.start();
   });
   // recognition events
   recognition.onresult = (e) => {
